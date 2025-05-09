@@ -9,7 +9,7 @@ def test_product_class(first_product,second_product):
     assert second_product.quantity== 8
 
 
-def test_category_lass(first_category):
+def test_category_сlass(first_category):
     assert first_category.name == "Смартфоны"
     assert first_category.description == "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни"
     assert first_category.name == "Смартфоны"
