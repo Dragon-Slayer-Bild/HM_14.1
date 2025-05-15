@@ -22,6 +22,9 @@ def test_product_class(first_product, second_product, product_dict):
     product.price = -99
     assert product.price == 1337
 
+    product.price = 0
+    assert product.price == 1337
+
 
 def test_category_сlass(first_category, first_product):
     assert first_category.name == "Смартфоны"
