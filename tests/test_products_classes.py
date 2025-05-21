@@ -63,7 +63,7 @@ def test_category_class_create(first_category, first_product):
 
 
 def test_category_class_str(first_category, first_product):
-    assert str(first_category) == "Смартфоны, количество продуктов: 5 шт."
+    assert str(first_category) == "Смартфоны, количество продуктов: 13 шт."
 
 
 def test_category_class_add(first_product, second_product):
