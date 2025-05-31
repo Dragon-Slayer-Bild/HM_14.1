@@ -1,3 +1,6 @@
+import pytest
+
+
 def test_category_class_create(first_category, first_product):
     assert first_category.name == "Смартфоны"
     assert first_category.description == (
@@ -30,3 +33,9 @@ def test_category_class_str(first_category, first_product):
 
 def test_category_class_add(first_product, second_product):
     assert str(first_product + second_product) == "2580000.0"
+
+
+def test_category_class_setter_error(first_category):
+    with pytest.raises(TypeError):
+        new_product = 1
+        first_category.add_product(new_product)
