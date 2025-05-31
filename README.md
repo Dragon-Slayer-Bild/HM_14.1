@@ -70,7 +70,7 @@ $ poetry add openpyxl
 Какие инструменты тестирования использованы в проекте и как их запускать.
 
 
-[test_products_classes.py](tests/test_products_classes.py)test_product_class
+[test_products_classes.py](tests/test_product.py)test_product_class
 
 - Тест который проверяет корректность инициализации объектов класса Category
 - Тест который проверяет корректность инициализации объектов класса Product
