@@ -1,6 +1,9 @@
 import pytest
 
-from src.products_classes import Category, Product
+from src.category import Category
+from src.lawn_grass import LawnGrass
+from src.product import Product
+from src.smartphone import Smartphone
 
 
 @pytest.fixture
@@ -35,3 +38,29 @@ def first_category():
         ],
     )
     return category1
+
+
+@pytest.fixture
+def first_product_smartphone():
+    smartphone1 = Smartphone(
+        "Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5, 95.5, "S23 Ultra", 256, "Серый"
+    )
+    return smartphone1
+
+
+@pytest.fixture
+def second_product_smartphone():
+    smartphone2 = Smartphone("Iphone 15", "512GB, Gray space", 210000.0, 8, 98.2, "15", 512, "Gray space")
+    return smartphone2
+
+
+@pytest.fixture
+def first_product_lawn_grass():
+    grass1 = LawnGrass("Газонная трава", "Элитная трава для газона", 500.0, 20, "Россия", "7 дней", "Зеленый")
+    return grass1
+
+
+@pytest.fixture
+def second_product_lawn_grass():
+    grass2 = LawnGrass("Газонная трава 2", "Выносливая трава", 450.0, 15, "США", "5 дней", "Темно-зеленый")
+    return grass2
