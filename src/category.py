@@ -38,3 +38,10 @@ class Category:
             product_str = f"{str(product)}\n"
             products_str.append(product_str)
         return products_str
+
+    def middle_price(self):
+        try:
+            middle_product_price = sum([product.price for product in self.__products]) / len(self.__products)
+            return round(middle_product_price, 2)
+        except ZeroDivisionError:
+            return 0

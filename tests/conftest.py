@@ -39,6 +39,14 @@ def first_category():
     )
     return category1
 
+@pytest.fixture
+def category_with_zero_product():
+    category1 = Category(
+        "Смартфоны",
+        "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
+        [],
+    )
+    return category1
 
 @pytest.fixture
 def first_product_smartphone():
