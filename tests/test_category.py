@@ -41,6 +41,6 @@ def test_category_class_setter_error(first_category):
         first_category.add_product(new_product)
 
 
-def test_middle_price(first_category,category_with_zero_product):
+def test_middle_price(first_category, category_with_zero_product):
     assert first_category.middle_price() == 195000
     assert category_with_zero_product.middle_price() == 0

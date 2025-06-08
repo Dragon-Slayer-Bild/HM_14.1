@@ -39,6 +39,7 @@ def first_category():
     )
     return category1
 
+
 @pytest.fixture
 def category_with_zero_product():
     category1 = Category(
@@ -47,6 +48,7 @@ def category_with_zero_product():
         [],
     )
     return category1
+
 
 @pytest.fixture
 def first_product_smartphone():

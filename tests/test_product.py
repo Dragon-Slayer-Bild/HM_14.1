@@ -39,7 +39,7 @@ def test_product_class_str(first_product):
 
 
 def test_product_add_zero_quantity():
-    with pytest.raises(ValueError, match='Товар с нулевым количеством не может быть добавлен'):
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
         Product("Iphone 15", "512GB, Gray space", 210000.0, 0)
 
 
